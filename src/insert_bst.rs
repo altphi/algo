@@ -34,8 +34,6 @@ fn insert_bst(mut bst: Tree<i32>, val: i32) -> Tree<i32> {
     bst
 }
 
-// this function builds a tree from input
-// learn more about how trees are encoded in https://algo.monster/problems/serializing_tree
 fn build_tree<'a, T, I>(nodes: &mut I) -> Result<Tree<T>, Box<dyn error::Error>>
 where
     T: FromStr,
